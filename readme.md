@@ -1,3 +1,40 @@
+# y_lock
+
+Locks the script to only run when bound to localhost (`bind 127.0.0.1` in `server.cfg`).  This is good for giving the script to strangers for testing, without them being able to steal it.  Uses extremely obfuscated code to stop reverse engineering.
+
+
+[![sampctl](https://shields.southcla.ws/badge/sampctl-y_lock-2f2f2f.svg?style=for-the-badge)](https://github.com/YSI-Server/y_lock)
+
+## Installation
+
+To install just this one library:
+
+```bash
+sampctl package install YSI-Server/y_lock
+```
+
+Include in your code and begin using the library:
+
+```pawn
+#include <YSI-Server/y_lock>
+```
+
+## Documentation
+
+* [Quick Start](YSI-Server/y_lock/quick-start.md) - One very simple example of getting started with this library.
+* [Features](YSI-Server/y_lock/features.md) - More features and examples.
+* [FAQs](YSI-Server/y_lock/faqs.md) - Frequently Asked Questions, including errors and solutions.
+* [API](YSI-Server/y_lock/api.md) - Full list of all functions and their meaning.
+* [Internal](YSI-Server/y_lock/internal.md) - Internal developer documentation for the system.
+
+## Testing
+
+To test, simply run the package:
+
+```bash
+sampctl package run
+```
+
 # YSI
 
 ## General Information
@@ -109,34 +146,4 @@ Libraries that have in-game visible effects.
 * [y_races](https://github.com/YSI-Visual/y_races/blob/dev/YSI-Visual/y_races.md)
 * [y_zonenames](https://github.com/YSI-Visual/y_zonenames/blob/dev/YSI-Visual/y_zonenames.md)
 * [y_zonepulse](https://github.com/YSI-Visual/y_zonepulse/blob/dev/YSI-Visual/y_zonepulse.md)
-
-# y_lock
-
-[![sampctl](https://shields.southcla.ws/badge/sampctl-y_lock-2f2f2f.svg?style=for-the-badge)](https://github.com/YSI-Server/y_lock)
-
-## Installation
-
-To install just this one library:
-
-```bash
-sampctl package install YSI-Server/y_lock
-```
-
-Include in your code and begin using the library:
-
-```pawn
-#include <YSI-Server/y_lock>
-```
-
-## Usage
-
-[Click Here] (YSI-Server/y_lock.md)
-
-## Testing
-
-To test, simply run the package:
-
-```bash
-sampctl package run
-```
 
